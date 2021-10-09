@@ -9,4 +9,9 @@
     <string name="total_pay">TOTAL PAY</string>
     <string name="total_tax">TOTAL TAX</string>
     <string name="reset">RESET</string>
+    <string name="student_details">STUDENT DETAILS</string>
+    <string name="name">Name</string>
+    <string name="carter_comeau">Carter Comeau</string>
+    <string name="student_id">Student ID</string>
+    <string name="_101253879">101253879</string>
 </resources>
