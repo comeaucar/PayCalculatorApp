@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/welcomeMsgTxt"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="#4DA61B1B"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/please_fill_out_details"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:translationY="20dp" />
+
+        <EditText
+            android:id="@+id/no_of_hours"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/number_of_hours_worked"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="#6A6868"
+            android:textSize="16sp"
+            android:translationX="15dp"
+            android:translationY="60dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/hourly_rate"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/pay_rate"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="#6A6868"
+            android:textSize="16sp"
+            android:translationX="15dp"
+            android:translationY="110dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/calculateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:backgroundTint="#03A9F4"
+            android:shadowColor="#171515"
+            android:shadowDy="10"
+            android:text="@string/calculate"
+            android:textColor="#000000"
+            android:translationX="150dp"
+            android:translationY="140dp"
+            />
+
+        <TextView
+            android:id="@+id/output1Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_pay"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:translationY="200dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/ouputPayTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#299F2E"
+            android:textSize="20sp"
+            android:translationY="210dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/output2Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_tax"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:translationY="260dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/outputTaxTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#299F2E"
+            android:textSize="20sp"
+            android:translationY="270dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:backgroundTint="#D81F1F"
+            android:text="@string/reset"
+            android:translationY="310dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
